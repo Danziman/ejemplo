@@ -1,0 +1,145 @@
+ body{
+ 	background-color: #71de10;
+ 	margin:0 auto;
+ }
+
+ #envoltura{
+ 	width: 55%;
+ 	height: auto;
+ }
+
+ *{
+ font-family: arial;
+     margin: 0 auto;
+     padding: 0;
+ }
+
+        /*******ESTILOS DEL MENU*************************************************/
+
+        header{
+         	width: 100%;
+        }
+
+        nav{
+         	margin: 0 auto;
+        }
+        nav ul{
+         	list-style: none;
+        }
+        nav > ul {/*para los ul's que estan directamente despues de la etiqueta nav*/
+         display: table; /*para que los elementos tengan un tamaño similiar y se muestren en caja*/
+         overflow: hidden;
+         /*para que todo lo que sobresalga del menu desaparezca*/
+         width: 100%;background-color: #000;
+        }
+        nav > ul li{
+         	display: table-cell;
+         	/*para que todos los elementos li tengan una posicion de celda.Esto pone un elemento al lado del otro*/
+        }
+
+        nav > ul li a{
+         	color:#fff;
+         	display: ´block;/*cpn display block vamos a poder cambiar el alto y el alto y el ancho a nuestro
+         	elemnto a*/
+         	line-height: 50px; padding: 70px;
+         	/*position: relative;*/ text-align: center;
+         	text-decoration: none;
+        }
+
+        nav ul li:hover{
+         	background-color: yellow;
+         	/*background-color: #5da5a2;*/
+       
+        }
+
+        /********************************************************************************/
+    
+  #publicidad{
+  	border:13px solid #FFFFFF;
+  	width: 100%;
+  	box-sizing: border-box; height: auto;
+  	margin: 0 auto; line-height: 0;
+  }
+
+  .uno{
+    width: 100%;
+    text-align: center;
+    background-color: #adff2f;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    color: #000000;
+    margin-top: 15px;
+    font-size: 40px;
+   }
+
+
+.parrafo1, .parrafo2, .parrafo3{  
+    width: 32%;
+    margin: 0px auto;
+    line-height: 24px;
+    text-align: justify;
+    margin-top: 20px; 
+}
+
+.parrafo4{
+    width: 100%;
+    margin: 0px auto;
+    line-height: 24px;
+    text-align: justify;
+    margin-top: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    background: #60860e;
+    clear: both;/*limpia los espacios vacios de la derecha y la izquierda*/
+}
+
+.parrafo1{
+	background-color: #9fa19b;
+	float: left;
+}
+.parrafo2{
+	background-color: #006400;
+	float: right;
+}
+.parrafo3{
+    background-color: #0A9C0A;
+}
+
+.parrafo1 h1, .parrafo2 h1, .parrafo3 h1, .parrafo4 h1{
+	background: #000;
+	padding: 12px 12px 12px 18px;
+	margin-top: 0px;
+    font-size: 25px;
+}
+.parrafo1 h1{
+	color:#D0F5A9;
+}
+.parrafo2 h1{
+	color:#0EFF0E;
+}
+.parrafo3 h1{
+	color:#00ff84;
+	
+}
+.parrafo4 h1{
+    color:#00ff84;
+    text-align: center;
+}
+.parrafo1 p, .parrafo2 p ,.parrafo3 p ,.parrafo4 p{
+	padding: 15px 15px 20px 15px;
+}
+#pie{
+	clear: both;
+	width: 100%;
+	height: 50px;
+	background-color: #000000;
+	color: #FFFFFF; 
+	line-height: 50px;
+	margin:0 auto;
+	text-align: center;
+	padding: 0px 12px 0 12px;
+	box-sizing: border-box;
+}
+
+
