@@ -1,0 +1,300 @@
+*{
+	margin:0 auto;
+	font-family: arial;
+}
+
+body{
+	font-size: 1em;
+	background-image:linear-gradient(to top,aquamarine,blueviolet); 
+	margin:0 auto;
+}
+
+#cuadros{
+	width:100%;
+	text-align: center;
+}
+
+header{
+	width: 100%;
+	background: #000;
+}
+
+#btn-menu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 30px;
+	margin-left:0;
+	height: 30px;
+	padding: 10px;
+	background-color: #4B7A47;
+}
+
+header label:hover{
+	cursor: pointer;
+	background-color: #FFA500;
+}
+
+
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display:flex;
+	flex-direction: row;
+	justify-content:center;
+}
+
+.menu li{
+	border:  1px solid #fff;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+}
+
+.menu li a:hover{
+	background-color: #87cefa;
+}
+
+.menu li a{
+	display: block;
+	padding: 20px;
+	text-decoration: none; 
+	color: #ffffff;
+	background-color: #800000;
+}
+
+main{
+	padding: 20px;
+}
+
+#envoltura{
+	width:60%;
+}
+
+.contenedor-slider{
+    margin: auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+}
+
+.slider__section {
+    width: 100%;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-prev, .btn-next {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.btn-prev:hover, .btn-next:hover {
+    background: blue;
+}
+
+.btn-prev {
+    left: 10px;
+}
+
+.btn-next {
+    right: 10px;
+}
+
+#barra{
+	width:100%;
+	height: 50px;
+	background-color: #000000;
+	margin: 0 auto;
+}
+
+section{
+	width: 100%;height: auto;margin: 0 auto; box-sizing: border-box;min-width: 100%;
+	background: #ffa500;
+
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#cuadro{
+	width:70%;
+	background-color: #ffa500;
+}
+
+.parrafo1, .parrafo2, .parrafo3{
+	width: 97%;
+	height: auto;
+	line-height: 23px;
+	margin-top:15px;
+	margin-bottom:15px;
+	background-color: #FFFFFF;
+	box-sizing: border-box;
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.parrafo1 p, .parrafo2 p, .parrafo3 p{
+	padding: 13px;
+}  
+
+.parrafo1 h1, .parrafo2 h1, .parrafo3 h1{
+	width: 100%;
+	background-color: #F5deb3;
+	padding: 12px;
+	padding-bottom: 0;
+	margin-top: 0px;
+	box-sizing: border-box;
+}
+
+.ima{
+	display: block;
+	width: 90%;
+	border:10px solid #fff;
+	margin-bottom: 10px;
+}
+
+.Sidebar{
+	width:30%;
+	background-color: #Ff0000;
+	padding: 12px 15px 12px 15px;
+	box-sizing: border-box;
+}
+
+.Sidebar h1{
+	width: 100%;
+	padding: 12px;
+	padding-bottom: 0;
+	margin-top: 0px;
+	box-sizing: border-box;
+}
+
+.Sidebar p{
+	padding: 13px;
+}
+
+#pie{
+	width:100%;
+	height: 50px;
+	background-color: #000000;
+	color: #FFFFFF;
+	line-height: 50px;
+	clear: both;
+	text-align: center;
+	padding: 0px 12px 0 12px;
+	box-sizing:border-box;
+}
+
+@media(max-width: 1493px){
+	#envoltura{
+	width: 85%;
+	}
+	section{
+	height: auto;
+	width: 100%;
+	}
+
+	.parrafo1, .parrafo2, .parrafo3{
+	width: 90%;
+	margin-top: 15px;
+	font-size: 0.9em;
+	display:flex;
+	}
+
+	.Sidebar{
+	width: 90%;
+	}
+
+	#pie{
+	width:100%;
+	margin-top:10px;
+	}
+}
+
+@media(max-width: 1276px){
+	#cuadro{
+	width:80%;
+	}
+}
+
+@media(max-width: 980px){
+	#cuadro{
+	width:90%;
+	}
+}
+
+@media(max-width: 768px){
+	header{
+	background: #000;
+    }
+
+	header label{
+	display: block;
+	background: #000;
+	}
+
+	#cuadro{
+	width:100%;
+	}
+
+	.extra{
+	position:absolute;
+	margin-left: -2000px;
+	}
+
+	.menu{
+	position: absolute;
+	background:#000;
+	width: 85%;
+	margin-left:-100%;
+	transition: all 0.7s;
+	}
+
+	.menu ul{
+	flex-direction: column;
+	}
+
+	.menu li{
+	border-top: 1px solid #fff;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+	}
+
+	#btn-menu:checked ~ .menu{
+	margin: 0;
+	}
+}
+
+@media(max-width: 561px){
+	#pie{
+	font-size: 12px;
+	}
+}
